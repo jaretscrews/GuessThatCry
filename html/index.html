@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <title>Node Workshop</title>
- </head>
- <body>
-     <h1 style="color: blue;">
-        Express: HELLO WORLD
-     </h1>
-     <img src="pokemon.jpg" alt="pokemon logo">
-     <audio controls>
-        <source src='1stgen/001 - Bulbasaur.mp3' type='audio/mp3'>
-        Your browser does not support the audio tag.
-    </audio>
- </body>
+   <head>
+      <title>GTC</title>
+   </head>
+   <body>
+      <h1 style="color: blue;">
+         GUESS THAT CRY
+      </h1>
+         <audio controls>
+            <source src="http://127.0.0.1:3000/api/randomCry" type="audio/mp3">
+            Your browser does not support the audio tag.
+         </audio>
+         <form action="http://127.0.0.1:3000/api/submitGuess" method="GET">
+            Guess:<br>
+            <input type="text" name="guess">
+            <button type="submit">Submit</button>
+         </form>
+   </body>
 </html>
